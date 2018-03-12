@@ -26,7 +26,7 @@ public class WarnOperation {
     }
 
     public int getTmpMin(int cycle) {
-        int tmpMin = 0;
+        int tmpMin = 100;
         for (int i = cycle - queryDays ; i < cycle; i++) {
             if (weatherBeans.get( i ).getTmp_min() < tmpMin) {
                 tmpMin = weatherBeans.get( i ).getTmp_min();
@@ -36,7 +36,7 @@ public class WarnOperation {
     }
 
     public int getTmpMax(int cycle) {
-        int tmpMax = 0;
+        int tmpMax =100;
         for (int i = cycle - queryDays ; i < cycle; i++) {
             if (weatherBeans.get( i ).getTmp_max() < tmpMax) {
                 tmpMax = weatherBeans.get( i ).getTmp_max();
@@ -51,9 +51,9 @@ public class WarnOperation {
             int max = weatherBeans.get( i ).getTmp_max();
             int min = weatherBeans.get( i ).getTmp_min();
             int vag = (max + min) / 2;
-            tmpAvg += vag;
+            tmpAvg += vag / queryDays;
         }
-            return tmpAvg / queryDays;
+            return tmpAvg ;
     }
 
 

@@ -16,9 +16,14 @@ public class JsonUtil {
     private  JsonParser jsonParser = new JsonParser();
     private JsonObject json;
 
+    public JsonUtil(FileReader data)  throws Exception{
+        this.json = (JsonObject) jsonParser.parse( data );
+    }
+
     public JsonUtil(String data)  throws Exception{
         this.json = (JsonObject) jsonParser.parse( data );
     }
+
 
 
     public String getReason() {

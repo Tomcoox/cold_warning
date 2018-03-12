@@ -15,7 +15,7 @@ public class ConfigurationManager {
     static {
         try {
             InputStream in = ConfigurationManager.class
-                    .getClassLoader().getResourceAsStream( "weather.properties" );
+                    .getClassLoader().getResourceAsStream( "coldwarn.properties" );
             prop.load( in );
         } catch (IOException e) {
             e.printStackTrace();

@@ -22,6 +22,8 @@ public interface Constants {
     String JDBC_URL = "jdbc.url";
     String JDBC_USER = "jdbc.user";
     String JDBC_PASSWORD = "jdbc.password";
+    String JDBC_TABLE_NAME_15 = "jdbc.table.name.15";
+    String JDBC_TABLE_NAME_10 = "jdbc.table.name.10";
 
     /**
      * Kafka Configuration Constants
@@ -39,4 +41,19 @@ public interface Constants {
     String ROOT_DIR = "hbase.rootdir";
     String HBASE_TABLE = "hbase.table";
 
+
+    /**
+     * Hbase Fields
+     */
+    String CW_AM = "cw_am";
+    String W_AM = "w_am";
+    String CW_PM = "cw_pm";
+    String W_PM = "w_pm";
+    String  WD ="wd";
+    String  WIND = "wind";
+    String  CWD = "cwd";
+    String  TMP_MAX ="tmp_max";
+    String  TMP_MIN = "tmp_min";
+    String  SUNRISE ="sunrise";
+    String  SUNSET ="sunset";
 }

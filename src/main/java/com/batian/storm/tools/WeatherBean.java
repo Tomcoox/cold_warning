@@ -43,8 +43,8 @@ public class WeatherBean {
         this.cw_am = cw_am;
     }
 
-    public String getW_am(String w_am) {
-        return this.w_am;
+    public String getW_am() {
+        return w_am;
     }
 
     public void setW_am(String w_am) {
